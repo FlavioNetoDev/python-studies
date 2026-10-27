@@ -1,0 +1,5 @@
+nmr = str(input('Digite um valor de 1 a 9999 ')).zfill(4)
+print('Unidade do seu numero é {}'.format(nmr[-1]))
+print('A dezena do seu numero é {}'.format(nmr[-2]))
+print('A centena do seu numero é {}'.format(nmr[-3]))
+print('A milhar do seu numero é {}'.format(nmr[-4]))
