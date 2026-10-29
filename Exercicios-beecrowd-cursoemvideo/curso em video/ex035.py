@@ -12,4 +12,5 @@ s = lado1 + lado2 + lado3
 if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 + lado2:
     print('Formam um triangulo')
 else:
-    print('\033[31mNão formam um triangulo')
+    print('\033[31mNão formam um triangulo\033[m')
+    
