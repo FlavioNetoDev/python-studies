@@ -1,11 +1,12 @@
 print('======EMPRESTIMO======')
-valor = float(input('Qual o valor da casa que deseja?: '))
-salario = float(input('Qual o seu salario? '))
-anos = int(input('Em quantos anos vc vai pagar? '))
+valor = float(input('Valor da casa?: '))
+salario = float(input('Salario do comprador?: '))
+anos = int(input('Quantos anos de financiamento?: '))
 limite = salario * 0.30
 meses = anos * 12
 prestação = valor / meses
+print('Pra pagar uma casa de {:.2f} em {} anos a prestação será de R${:.2f}'.format(valor, anos, prestação))
 if prestação > limite:
-    print('Emprestimo negado, seu salario não ultrapassa a prestação mensal')
+    print('Emprestimo negado, a prestação ultrapassa 30% do salario')
 else:
     print('Emprestimo Aceito')
