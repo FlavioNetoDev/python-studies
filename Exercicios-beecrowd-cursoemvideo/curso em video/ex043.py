@@ -5,7 +5,7 @@ imc = peso / (altura * altura)
 if imc <= 18.5:
     print('IMC de {:.2f}, Abaixo do peso'.format(imc))
 elif imc >= 18.5 and imc <= 25:
-    ('IMC de {:.2f}, Peso ideal'.format(imc))
+    print('IMC de {:.2f}, Peso ideal'.format(imc))
 elif imc >= 25 and imc <= 30:
     print('IMC de {:.2f}, Sobrepeso'.format(imc))
 elif imc >= 30 and imc <= 40:
