@@ -1,10 +1,10 @@
-nota1 = int(input('Digite sua primeira nota: '))
-nota2 = int(input('Digite sua segunda nota:'))
+nota1 = float(input('Digite sua primeira nota: '))
+nota2 = float(input('Digite sua segunda nota: '))
 media = (nota1 + nota2) / 2
-
+print(f'Entre {nota1} e {nota2}, a média do aluno é {media}')
 if media < 5:
-    print('Reprovado')
+    print('O aluno foi REPROVADO')
 elif media >= 5 and media <= 6.9:
-    print('Recuperação')
+    print('o aluno está em RECUPERAÇÃO')
 elif media >= 7:
-    print('Aprovado')
+    print('O aluno foi APROVADO!')
