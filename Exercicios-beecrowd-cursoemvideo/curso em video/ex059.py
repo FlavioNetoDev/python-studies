@@ -7,7 +7,7 @@ while opcao != 5:
     opcao = int(input('Qual sua opção?: '))
     if opcao == 1:
         soma = n1 + n2
-        print(f'A soma entre {n1} e {n2} eh {soma}')
+        print(f'A soma entre {n1} + {n2} eh {soma}')
         sleep(2)
     elif opcao == 2:
         multi = n1 * n2
@@ -22,7 +22,11 @@ while opcao != 5:
     elif opcao == 4:
         n1 = int(input('Digite um valor: '))
         n2 = int(input('Digite outro valor: '))
-    elif opcao > 5:
-        print('Digite uma opcao correspondente: ')
         sleep(2)
-print('Fechando...')
+    elif opcao == 5:
+        print("Fechando...")
+        sleep(2)
+        break
+    else:
+        print('Opção inválida, tente novamente...')
+        sleep(2)
